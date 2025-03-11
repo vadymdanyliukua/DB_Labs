@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01af464d-2565-46d3-b502-97df2a86c875" name="Changes" comment="Что-то изменил">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="01af464d-2565-46d3-b502-97df2a86c875" name="Changes" comment="Что-то изменил" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +13,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Ruslan-LT/Develop1.git",
+    "accountId": "9a3348c1-3605-461f-8945-fecc6b17c4bf"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 0
 }]]></component>
@@ -97,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1741706550115</updated>
-      <workItem from="1741706551920" duration="2172000" />
+      <workItem from="1741706551920" duration="2635000" />
     </task>
     <task id="LOCAL-00001" summary="Что-то изменил">
       <option name="closed" value="true" />
@@ -107,7 +111,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741708736364</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Что-то изменил">
+      <option name="closed" value="true" />
+      <created>1741708904866</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741708904866</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Что-то изменил">
+      <option name="closed" value="true" />
+      <created>1741709131481</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741709131481</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
