@@ -2,25 +2,16 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "rrgrgrgrg",
+  title: "проєкт студентів ФІОТ",
   description: "Lab5",
   base:"/Develop1/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Zmist', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
-      {text:'Authors', link: '/authors' },
-    ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+      { text: 'Головна', link: '/' },
+      { text: 'Аналіз предметної області', link: '/vstup' },
+      { text: 'Запити зацікавлених осіб', link: '/zapity' },
+      {text:'Автори', link: '/authors' },
     ],
 
     socialLinks: [

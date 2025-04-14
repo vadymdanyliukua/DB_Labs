@@ -4,7 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01af464d-2565-46d3-b502-97df2a86c875" name="Changes" comment="Что-то изменил" />
+    <list default="true" id="01af464d-2565-46d3-b502-97df2a86c875" name="Changes" comment="Что-то изменил2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vitepress/config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/api-examples.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/api-examples.md.8pndvwU7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/api-examples.md.8pndvwU7.lean.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/app.Bjw4HQj7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/authors.md.Bsa7eIMF.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/authors.md.Bsa7eIMF.lean.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/chunks/framework.BUjEV7Eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/chunks/theme.DFJXeYIa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/index.md.e4NEFxQT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/index.md.e4NEFxQT.lean.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-italic-cyrillic-ext.r48I6akx.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-italic-cyrillic.By2_1cv3.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-italic-greek-ext.1u6EdAuj.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-italic-greek.DJ8dCoTZ.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-italic-latin-ext.CN1xVJS-.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-italic-latin.C2AdPX0b.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-italic-vietnamese.BSbpV94h.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-roman-cyrillic-ext.BBPuwvHQ.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-roman-cyrillic.C5lxZ8CY.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-roman-greek-ext.CqjqNYQ-.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-roman-greek.BBVDIX6e.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-roman-latin-ext.4ZJIpNVo.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-roman-latin.Di8DUHzh.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-roman-vietnamese.BjW4sHH5.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/style.BxRS-zzZ.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/vstup.md.DmGn2hv8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/vstup.md.DmGn2hv8.lean.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/authors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/hashmap.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/vp-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/vstup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/authors.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/authors.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/vstup.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/vstup.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,41 +52,48 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Ruslan-LT/Develop1.git",
-    "accountId": "9a3348c1-3605-461f-8945-fecc6b17c4bf"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ruslan-LT&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ruslan-LT/Develop1.git&quot;,
+    &quot;accountId&quot;: &quot;9a3348c1-3605-461f-8945-fecc6b17c4bf&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2uB0EiSPgB6sD74vn5sUF3Mqjfz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.docs:build.executor": "Run",
-    "npm.docs:dev.executor": "Run",
-    "npm.docs:preview.executor": "Run",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.docs:build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.docs:dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.docs:preview.executor&quot;: &quot;Run&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\arekh\WebstormProjects\Develop2\docs" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.docs:preview">
+  <component name="RunManager" selected="npm.docs:dev">
     <configuration name="docs:build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -80,9 +126,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.docs:preview" />
-        <item itemvalue="npm.docs:build" />
         <item itemvalue="npm.docs:dev" />
+        <item itemvalue="npm.docs:build" />
+        <item itemvalue="npm.docs:preview" />
       </list>
     </recent_temporary>
   </component>
@@ -101,7 +147,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1741706550115</updated>
-      <workItem from="1741706551920" duration="2635000" />
+      <workItem from="1741706551920" duration="6157000" />
+      <workItem from="1744529769544" duration="14002000" />
+      <workItem from="1744608539557" duration="3957000" />
     </task>
     <task id="LOCAL-00001" summary="Что-то изменил">
       <option name="closed" value="true" />
@@ -127,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741709131481</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Что-то изменил2">
+      <option name="closed" value="true" />
+      <created>1741709361446</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741709361446</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +191,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Что-то изменил" />
-    <option name="LAST_COMMIT_MESSAGE" value="Что-то изменил" />
+    <MESSAGE value="Что-то изменил2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Что-то изменил2" />
   </component>
 </project>

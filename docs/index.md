@@ -3,16 +3,14 @@
 layout: home
 
 hero:
-  name: "Lab1"
-  text: "Lab1"
-  tagline: My great project tagline
+  text: "Система управління відкритими даними"
   actions:
     - theme: brand
-      text: Вступ
+      text: Аналіз предметної області
       link: /vstup
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Запити зацікавлених осіб
+      link: /zapity
 
 ---
 

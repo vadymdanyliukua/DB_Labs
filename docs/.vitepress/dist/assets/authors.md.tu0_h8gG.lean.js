@@ -1,0 +1,1 @@
+import{_ as r,c as o,o as n,ae as s}from"./chunks/framework.BUjEV7Eo.js";const c=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"authors.md","filePath":"authors.md"}'),i={name:"authors.md"};function e(l,t,a,g,_,u){return n(),o("div",null,t[0]||(t[0]=[s("",4)]))}const d=r(i,[["render",e]]);export{c as __pageData,d as default};
