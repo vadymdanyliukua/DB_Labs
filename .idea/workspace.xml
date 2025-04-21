@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01af464d-2565-46d3-b502-97df2a86c875" name="Changes" comment="Что-то изменил" />
+    <list default="true" id="01af464d-2565-46d3-b502-97df2a86c875" name="Changes" comment="Виконана лабораторна робота 1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vitepress/config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vitepress/dist/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/api-examples.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vitepress/dist/api-examples.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/authors.md.G7OGs-k2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/authors.md.G7OGs-k2.lean.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/authors.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vitepress/dist/authors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/hashmap.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vitepress/dist/hashmap.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vitepress/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/vstup.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vitepress/dist/vstup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/zapity.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vitepress/dist/zapity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/authors.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/authors.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/zapity.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/zapity.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,12 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Ruslan-LT/Develop1.git&quot;,
-    &quot;accountId&quot;: &quot;9a3348c1-3605-461f-8945-fecc6b17c4bf&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Ruslan-LT"
   }
-}</component>
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Ruslan-LT/DB_Labs",
+    "accountId": "9a3348c1-3605-461f-8945-fecc6b17c4bf"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -27,27 +47,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.docs:build.executor&quot;: &quot;Run&quot;,
-    &quot;npm.docs:dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.docs:preview.executor&quot;: &quot;Run&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.docs:build.executor": "Run",
+    "npm.docs:dev.executor": "Run",
+    "npm.docs:preview.executor": "Run",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\arekh\WebstormProjects\Develop2\docs" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.docs:preview">
+  <component name="RunManager" selected="npm.docs:dev">
     <configuration name="docs:build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -80,9 +101,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.docs:preview" />
-        <item itemvalue="npm.docs:build" />
         <item itemvalue="npm.docs:dev" />
+        <item itemvalue="npm.docs:build" />
+        <item itemvalue="npm.docs:preview" />
       </list>
     </recent_temporary>
   </component>
@@ -102,6 +123,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741706550115</updated>
       <workItem from="1741706551920" duration="2635000" />
+      <workItem from="1745226470520" duration="2134000" />
     </task>
     <task id="LOCAL-00001" summary="Что-то изменил">
       <option name="closed" value="true" />
@@ -127,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741709131481</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Виконана лабораторна робота 1">
+      <option name="closed" value="true" />
+      <created>1744903709275</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744903709275</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +165,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Что-то изменил" />
-    <option name="LAST_COMMIT_MESSAGE" value="Что-то изменил" />
+    <MESSAGE value="Виконана лабораторна робота 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Виконана лабораторна робота 1" />
   </component>
 </project>
