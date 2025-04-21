@@ -15,6 +15,7 @@ export default defineConfig({
       { text: 'Головна', link: '/' },
       { text: 'Зміст', link: '/vstup' },
       { text: 'Запити зацікавлених осіб', link: '/zapity'},
+      { text: 'lab2', link: '/lab2'},
       { text: 'Автори', link: '/authors' },
     ],
 
