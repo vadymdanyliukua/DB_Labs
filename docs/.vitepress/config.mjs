@@ -9,8 +9,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Автори', link: '/authors' },
-      { text: 'Аналіз предметної області', link: '/vstup' },
-      {text:'Запити зацікавлених осіб', link: '/zapity' },
+      { text: 'Вступ', link: '/vstup' },
     ],
 
 
