@@ -4,8 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01af464d-2565-46d3-b502-97df2a86c875" name="Changes" comment="Дороблені деякі зміни">
+    <list default="true" id="01af464d-2565-46d3-b502-97df2a86c875" name="Changes" comment="Остаточно дороблено 1 лабу">
+      <change afterPath="$PROJECT_DIR$/docs/dist/assets/api-examples.md.8pndvwU7.lean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dist/assets/app.Bjw4HQj7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dist/assets/authors.md.D_dZ9AEy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dist/assets/authors.md.D_dZ9AEy.lean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dist/assets/chunks/theme.DFJXeYIa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dist/assets/index.md.FmTUAeU3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dist/assets/index.md.FmTUAeU3.lean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dist/assets/vstup.md.BUtZIA4x.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dist/assets/vstup.md.BUtZIA4x.lean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dist/assets/zapity.md.DaaSYGf3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dist/assets/zapity.md.DaaSYGf3.lean.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/api-examples.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/api-examples.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/api-examples.md.8pndvwU7.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/api-examples.md.8pndvwU7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/api-examples.md.8pndvwU7.lean.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/app.Bjw4HQj7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/authors.md.D_dZ9AEy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/authors.md.D_dZ9AEy.lean.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/chunks/framework.BUjEV7Eo.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/chunks/framework.BUjEV7Eo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/chunks/theme.DFJXeYIa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/index.md.FmTUAeU3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/index.md.FmTUAeU3.lean.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-italic-cyrillic-ext.r48I6akx.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/inter-italic-cyrillic-ext.r48I6akx.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-italic-cyrillic.By2_1cv3.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/inter-italic-cyrillic.By2_1cv3.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-italic-greek-ext.1u6EdAuj.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/inter-italic-greek-ext.1u6EdAuj.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-italic-greek.DJ8dCoTZ.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/inter-italic-greek.DJ8dCoTZ.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-italic-latin-ext.CN1xVJS-.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/inter-italic-latin-ext.CN1xVJS-.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-italic-latin.C2AdPX0b.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/inter-italic-latin.C2AdPX0b.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-italic-vietnamese.BSbpV94h.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/inter-italic-vietnamese.BSbpV94h.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-roman-cyrillic-ext.BBPuwvHQ.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/inter-roman-cyrillic-ext.BBPuwvHQ.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-roman-cyrillic.C5lxZ8CY.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/inter-roman-cyrillic.C5lxZ8CY.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-roman-greek-ext.CqjqNYQ-.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/inter-roman-greek-ext.CqjqNYQ-.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-roman-greek.BBVDIX6e.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/inter-roman-greek.BBVDIX6e.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-roman-latin-ext.4ZJIpNVo.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/inter-roman-latin-ext.4ZJIpNVo.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-roman-latin.Di8DUHzh.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/inter-roman-latin.Di8DUHzh.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/inter-roman-vietnamese.BjW4sHH5.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/inter-roman-vietnamese.BjW4sHH5.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/style.BxRS-zzZ.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/assets/style.BxRS-zzZ.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/vstup.md.BUtZIA4x.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/vstup.md.BUtZIA4x.lean.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/zapity.md.DaaSYGf3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/assets/zapity.md.DaaSYGf3.lean.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/authors.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/authors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/hashmap.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/hashmap.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/vp-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/vp-icons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/vstup.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/vstup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vitepress/dist/zapity.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dist/zapity.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +103,7 @@
       <recent name="C:\Users\arekh\WebstormProjects\Develop2\docs" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.docs:build">
+  <component name="RunManager" selected="npm.docs:dev">
     <configuration name="docs:build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -89,8 +136,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.docs:build" />
         <item itemvalue="npm.docs:dev" />
+        <item itemvalue="npm.docs:build" />
         <item itemvalue="npm.docs:preview" />
       </list>
     </recent_temporary>
@@ -112,7 +159,7 @@
       <updated>1741706550115</updated>
       <workItem from="1741706551920" duration="2635000" />
       <workItem from="1745226470520" duration="3200000" />
-      <workItem from="1745229951684" duration="507000" />
+      <workItem from="1745229951684" duration="1162000" />
     </task>
     <task id="LOCAL-00001" summary="Что-то изменил">
       <option name="closed" value="true" />
@@ -154,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745228964771</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Остаточно дороблено 1 лабу">
+      <option name="closed" value="true" />
+      <created>1745230660982</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745230660982</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +219,7 @@
     <MESSAGE value="Что-то изменил" />
     <MESSAGE value="Виконана лабораторна робота 1" />
     <MESSAGE value="Дороблені деякі зміни" />
-    <option name="LAST_COMMIT_MESSAGE" value="Дороблені деякі зміни" />
+    <MESSAGE value="Остаточно дороблено 1 лабу" />
+    <option name="LAST_COMMIT_MESSAGE" value="Остаточно дороблено 1 лабу" />
   </component>
 </project>
