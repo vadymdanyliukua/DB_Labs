@@ -11,6 +11,12 @@ export default defineConfig({
       { text: 'Автори', link: '/authors' },
       { text: 'Вступ', link: '/vstup' },
     ],
+    sidebar: [
+      { text: 'Головна', link: '/' },
+      { text: 'Зміст', link: '/vstup' },
+      { text: 'Запити зацікавлених осіб', link: '/zapity'}
+      { text: 'Автори', link: '/authors' },
+    ],
 
 
     socialLinks: [
