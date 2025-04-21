@@ -14,7 +14,7 @@ export default defineConfig({
     sidebar: [
       { text: 'Головна', link: '/' },
       { text: 'Зміст', link: '/vstup' },
-      { text: 'Запити зацікавлених осіб', link: '/zapity'}
+      { text: 'Запити зацікавлених осіб', link: '/zapity'},
       { text: 'Автори', link: '/authors' },
     ],
 
