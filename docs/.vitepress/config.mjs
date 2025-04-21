@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Проєкт студентів ФІОТу",
-  description: "Lab5",
+  description: "Лабораторні",
   base:"/DB_Labs/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
