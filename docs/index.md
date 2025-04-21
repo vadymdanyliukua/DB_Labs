@@ -6,11 +6,11 @@ hero:
   text: "Система управління відкритими даними"
   actions:
     - theme: brand
-      text: Аналіз предметної області
+      text: Зміст
       link: /vstup
     - theme: alt
-      text: Запити зацікавлених осіб
-      link: /zapity
+      text: Автори
+      link: /authors
 
 ---
 
