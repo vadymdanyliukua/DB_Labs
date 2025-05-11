@@ -35,7 +35,7 @@
 
 ### GuestSearch
 
-<img src="/GuestSearch.jpg" alt="GuestSearch" style="float: right; width: 300px;">
+![GuestSearch](/GuestSearch.jpg)
 <br>
 
 | Поле                | Опис                                                                 |
