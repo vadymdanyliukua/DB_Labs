@@ -35,7 +35,7 @@
 
 ### GuestSearch
 
-[GuestSearch](DB_Labs/blob/main/docs/GuestSearch.jpg)
+![GuestSearch](DB_Labs/blob/main/docs/GuestSearch.jpg)
 
 | Поле                | Опис                                                                 |
 |---------------------|----------------------------------------------------------------------|
