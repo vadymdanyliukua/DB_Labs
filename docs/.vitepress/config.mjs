@@ -13,6 +13,7 @@ export default defineConfig({
     ],
     sidebar: [
       { text: 'Головна', link: '/' },
+      { text: 'Вступ', link: '/vstup_1' },
       { text: 'Аналіз предметної області', link: '/vstup' },
       { text: 'Запити зацікавлених осіб', link: '/zapity'},
       { text: 'Модель прецедентів', link: '/lab2'},
