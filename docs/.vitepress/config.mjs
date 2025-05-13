@@ -18,6 +18,8 @@ export default defineConfig({
       { text: 'Запити зацікавлених осіб', link: '/zapity'},
       { text: 'Модель прецедентів', link: '/lab2'},
       { text: 'Автори', link: '/authors' },
+      { text: 'Проєктування інформаційного забезпечення: проєктування бази данних', link: '/lab3' },
+      
     ],
 
 
