@@ -1,17 +1,17 @@
-#Модель прецедентів
+# Модель прецедентів
 
 ## Загальна схема
 
 ![TotalSchema](/TotalSchema.jpg)
 
-##Відвідувач
+## Відвідувач
 
 ![Guest](/Guest.jpg)
 
-##Користувач
+## Користувач
 
 ![User](/User.jpg)
 
-##Адміністратор
+## Адміністратор
 
 ![Administrator](/Administrator.jpg)
