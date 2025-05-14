@@ -13,11 +13,11 @@ export default defineConfig({
     ],
     sidebar: [
       { text: 'Головна', link: '/' },
+      { text: 'Автори', link: '/authors' },
       { text: 'Вступ', link: '/vstup_1' },
       { text: 'Аналіз предметної області', link: '/vstup' },
       { text: 'Запити зацікавлених осіб', link: '/zapity'},
       { text: 'Модель прецедентів', link: '/lab2'},
-      { text: 'Автори', link: '/authors' },
       { text: 'Проєктування інформаційного забезпечення: проєктування бази данних', link: '/lab3' },
       
     ],
