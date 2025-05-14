@@ -10,7 +10,7 @@
 
 ## Реляційна схема
 
-### User
+### Users
 
 | Поле        | Тип даних | Ключ                      |
 | ----------- | --------- | ------------------------- |
@@ -22,28 +22,28 @@
 | email       | VARCHAR   | UNIQUE                    |
 | role\_id    | INT       | FOREIGN KEY → `Roles(id)` |
 
-## Role
+## Roles
 
 | Поле  | Тип даних | Ключ        |
 | ----- | --------- | ----------- |
 | id    | SERIAL    | PRIMARY KEY |
 | alias | VARCHAR   | NOT NULL    |
 
-## Permission
+## Permissions
 
 | Поле  | Тип даних | Ключ        |
 | ----- | --------- | ----------- |
 | id    | SERIAL    | PRIMARY KEY |
 | alias | VARCHAR   | NOT NULL    |
 
-## Permissiom_Role
+## Permissiom_Roles
 
 | Поле           | Тип даних | Ключ                            |
 | -------------- | --------- | ------------------------------- |
 | role\_id       | INT       | FOREIGN KEY → `Roles(id)`       |
 | permission\_id | INT       | FOREIGN KEY → `Permissions(id)` |
 
-## Access
+## Accesses
 
 | Поле           | Тип даних | Ключ                            |
 | -------------- | --------- | ------------------------------- |
@@ -51,7 +51,7 @@
 | dataset\_id    | INT       | FOREIGN KEY → `Datasets(id)`    |
 | permission\_id | INT       | FOREIGN KEY → `Permissions(id)` |
 
-## Dataset
+## Datasets
 
 | Поле         | Тип даних | Ключ                           |
 | ------------ | --------- | ------------------------------ |
@@ -62,7 +62,7 @@
 | datafile\_id | INT       | FOREIGN KEY → `Datafiles(id)`  |
 | category\_id | INT       | FOREIGN KEY → `Categories(id)` |
 
-## Datafile
+## Datafiles
 
 | Поле        | Тип даних | Ключ                      |
 | ----------- | --------- | ------------------------- |
@@ -76,7 +76,7 @@
 | user\_id    | INT       | FOREIGN KEY → `Users(id)` |
 
 
-## Category
+## Categories
 
 | Поле                 | Тип даних | Ключ                           |
 | -------------------- | --------- | ------------------------------ |
@@ -86,7 +86,7 @@
 | parent\_category\_id | INT       | FOREIGN KEY → `Categories(id)` |
 
 
-## Update
+## Updates
 
 | Поле        | Тип даних | Ключ                         |
 | ----------- | --------- | ---------------------------- |
