@@ -1,1 +1,1 @@
-
+<pre> ```sql BEGIN; CREATE TABLE IF NOT EXISTS public."Users" ( id integer NOT NULL, login character varying(30) NOT NULL, first_name character varying(50) NOT NULL, last_name character varying(50) NOT NULL, password character varying(50) NOT NULL, email character varying(30) NOT NULL, role_id integer NOT NULL, PRIMARY KEY (id) ); ``` </pre>
