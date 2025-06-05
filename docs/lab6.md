@@ -187,15 +187,15 @@ datasetsRouter
 
 ### `GET http://localhost:3000/datasets`
 
-![1](./img.png)
+![1](./img_2.png)
 
 ### `GET http://localhost:3000/datasets/:id`
 
-![2](./img_1.png)
+![2](./img.png)
 
 ### `POST http://localhost:3000/datasets`
 
-![3](./img_2.png)
+![3](./img_1.png)
 
 ### `PUT http://localhost:3000/datasets/:id`
 
