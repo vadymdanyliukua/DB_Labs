@@ -1,12 +1,10 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Проєкт студентів ФІОТу",
   description: "Лабораторні",
   base:"/DB_Labs/",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Автори', link: '/authors' },
       { text: 'Вступ', link: '/vstup_1' },
@@ -20,10 +18,8 @@ export default defineConfig({
       { text: 'Модель прецедентів', link: '/lab2'},
       { text: 'Проєктування інформаційного забезпечення: проєктування бази данних', link: '/lab3' },
       { text: 'Реалізація інформаційного та програмного забезпечення', link: '/lab5' },
-      
+      { text: 'Реалізація RESTful сервісу та тестування', link: '/lab6' },
     ],
-
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Ruslan-LT/DB_Labs.git' }
     ]
