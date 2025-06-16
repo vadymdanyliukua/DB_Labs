@@ -1,209 +1,163 @@
-# RESTful сервіс для управління відкритими даними
+# Лабораторна робота №6
 
-## Реалізація RESTful сервісу
+## Тема: Реалізація об’єктно-реляційного відображення
 
-### .env
 
-```text
-MYSQL_HOST=localhost
-MYSQL_PORT=3306
-MYSQL_DATABASE=DB_NAME
-MYSQL_USER=root
-MYSQL_PASSWORD=
-PORT=3000
-```
+## SQL: Створення бази даних (SQL)
 
-### package.json
+```CREATE DATABASE IF NOT EXISTS opendata_db;
+USE opendata_db;
 
-```json
-{
-  "name": "open-data-api",
-  "type": "module",
-  "devDependencies": {
-    "nodemon": "^3.1.10",
-    "vitepress": "^1.6.3"
-  },
-  "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
-    "rest:dev": "nodemon src/app.js"
-  },
-  "dependencies": {
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0",
-    "morgan": "^1.10.0",
-    "mysql2": "^3.14.1"
-  }
-}
-```
+CREATE TABLE Dataset (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    author VARCHAR(100),
+    created_at DATE
+);
 
-### src/app.js
+CREATE TABLE Category (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
 
-```js
-import express from 'express';
-import morgan  from 'morgan';
-import { config } from 'dotenv';
-import { datasetsRouter } from './routes/dataset.routes.js';
-config();
-
-const app = express();
-app.use(morgan('dev'));
-app.use(express.json());
-
-app.use('/datasets', datasetsRouter);
-
-app.use((err, _req, res, _next) => {
-  console.error(err);
-  res.status(500).json({ error: 'Internal Server Error' });
-});
-
-app.listen(process.env.PORT || 3000, () =>
-  console.log(`API ready on http://localhost:${process.env.PORT || 3000}`),
+CREATE TABLE DatasetCategory (
+    dataset_id INT,
+    category_id INT,
+    PRIMARY KEY (dataset_id, category_id),
+    FOREIGN KEY (dataset_id) REFERENCES Dataset(id),
+    FOREIGN KEY (category_id) REFERENCES Category(id)
 );
 ```
 
-### src/db.js
+## Bean-класи (Java)
+'''
+public class Dataset {
+    private int id;
+    private String title;
+    private String description;
+    private String author;
+    private LocalDate createdAt;
+    // Геттери і сеттери
+}
+'''
+### Category.java
 
-```js
-import mysql from 'mysql2/promise';
-import dotenv from 'dotenv';
-dotenv.config();
-
-export const pool = mysql.createPool({
-  host: process.env.MYSQL_HOST,
-  port: process.env.MYSQL_PORT,
-  user: process.env.MYSQL_USER,
-  password: process.env.MYSQL_PASSWORD,
-  database: process.env.MYSQL_DATABASE,
-  waitForConnections: true,
-  connectionLimit: 10,
-});
+```public class Category {
+    private int id;
+    private String name;
+    // Геттери і сеттери
+}
 ```
 
-### src/services/dataset.service.js
+### DAO-інтерфейси та реалізація
 
-```js
-import { pool } from '../db.js';
+DatasetDAO.java
 
-export const DatasetsService = {
-  async findAll() {
-    const [rows] = await pool.query('SELECT * FROM `Datasets` ORDER BY id');
-    return rows;
-  },
+```public interface DatasetDAO {
+    void insert(Dataset dataset);
+    Dataset findById(int id);
+    List<Dataset> findAll();
+}
+```
+### DatasetDAOImpl.java
+```
+public class DatasetDAOImpl implements DatasetDAO {
+    private Connection conn;
 
-  async findById(id) {
-    const [rows] = await pool.query('SELECT * FROM `Datasets` WHERE id = ?', [id]);
-    return rows[0] ?? null;
-  },
+    public DatasetDAOImpl(Connection conn) {
+        this.conn = conn;
+    }
 
-  async create(data) {
-    const { title, description, rating, datafile_id, category_id } = data;
-    const [result] = await pool.query(
-      `INSERT INTO \`Datasets\`
-           (title, description, rating, datafile_id, category_id)
-       VALUES (?, ?, ?, ?, ?)`,
-      [title, description, rating, datafile_id, category_id],
-    );
-    return { id: result.insertId, ...data };
-  },
+    @Override
+    public void insert(Dataset dataset) {
+        String sql = "INSERT INTO Dataset (title, description, author, created_at) VALUES (?, ?, ?, ?)";
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, dataset.getTitle());
+            stmt.setString(2, dataset.getDescription());
+            stmt.setString(3, dataset.getAuthor());
+            stmt.setDate(4, Date.valueOf(dataset.getCreatedAt()));
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
-  async update(id, data) {
-    const { title, description, rating, datafile_id, category_id } = data;
-    const [result] = await pool.query(
-      `UPDATE \`Datasets\`
-       SET title = ?, description = ?, rating = ?,
-           datafile_id = ?, category_id = ?
-       WHERE id = ?`,
-      [title, description, rating, datafile_id, category_id, id],
-    );
-    return result.affectedRows ? { id: Number(id), ...data } : null;
-  },
+    @Override
+    public Dataset findById(int id) {
+        String sql = "SELECT * FROM Dataset WHERE id = ?";
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setInt(1, id);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) {
+                Dataset dataset = new Dataset();
+                dataset.setId(rs.getInt("id"));
+                dataset.setTitle(rs.getString("title"));
+                dataset.setDescription(rs.getString("description"));
+                dataset.setAuthor(rs.getString("author"));
+                dataset.setCreatedAt(rs.getDate("created_at").toLocalDate());
+                return dataset;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
-  async remove(id) {
-    const [result] = await pool.query('DELETE FROM `Datasets` WHERE id = ?', [id]);
-    return Boolean(result.affectedRows);
-  },
-};
+    @Override
+    public List<Dataset> findAll() {
+        List<Dataset> list = new ArrayList<>();
+        String sql = "SELECT * FROM Dataset";
+        try (Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+            while (rs.next()) {
+                Dataset dataset = new Dataset();
+                dataset.setId(rs.getInt("id"));
+                dataset.setTitle(rs.getString("title"));
+                dataset.setDescription(rs.getString("description"));
+                dataset.setAuthor(rs.getString("author"));
+                dataset.setCreatedAt(rs.getDate("created_at").toLocalDate());
+                list.add(dataset);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+}
 ```
 
-### src/controllers/dataset.controller.js
+### 4. Тестова програма
+Main.java
+```
+public class Main {
+    public static void main(String[] args) {
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/opendata_db", "root", "password")) {
+            DatasetDAO datasetDAO = new DatasetDAOImpl(conn);
 
-```js
-import { DatasetsService } from '../services/dataset.service.js';
+            Dataset ds = new Dataset();
+            ds.setTitle("Energy Statistics");
+            ds.setDescription("Energy consumption by region.");
+            ds.setAuthor("Ministry of Energy");
+            ds.setCreatedAt(LocalDate.now());
 
-export const getAll = async (_req, res, next) => {
-  try { res.json(await DatasetsService.findAll()); }
-  catch (e) { next(e); }
-};
+            datasetDAO.insert(ds);
 
-export const getOne = async (req, res, next) => {
-  try {
-    const ds = await DatasetsService.findById(req.params.id);
-    if (!ds) return res.status(404).json({ message: 'Not found' });
-    res.json(ds);
-  } catch (e) { next(e); }
-};
+            Dataset loaded = datasetDAO.findById(1);
+            System.out.println("Завантажено: " + loaded.getTitle());
 
-export const create = async (req, res, next) => {
-  try { res.status(201).json(await DatasetsService.create(req.body)); }
-  catch (e) { next(e); }
-};
+            System.out.println("Всі набори:");
+            for (Dataset d : datasetDAO.findAll()) {
+                System.out.println(d.getTitle());
+            }
 
-export const update = async (req, res, next) => {
-  try {
-    const ds = await DatasetsService.update(req.params.id, req.body);
-    if (!ds) return res.status(404).json({ message: 'Not found' });
-    res.json(ds);
-  } catch (e) { next(e); }
-};
-
-export const remove = async (req, res, next) => {
-  try {
-    const ok = await DatasetsService.remove(req.params.id);
-    if (!ok) return res.status(404).json({ message: 'Not found' });
-    res.status(204).end();
-  } catch (e) { next(e); }
-};
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}
 ```
 
-### src/routes/dataset.routes.js
+Висновок
 
-```js
-import { Router } from 'express';
-import * as ctrl from '../controllers/dataset.controller.js';
-
-export const datasetsRouter = Router();
-
-datasetsRouter
-  .get('/', ctrl.getAll)
-  .get('/:id', ctrl.getOne)
-  .post('/', ctrl.create)
-  .put('/:id', ctrl.update)
-  .delete('/:id', ctrl.remove);
-```
-
-## Тестування RESTful сервісу
-
-### `GET http://localhost:3000/datasets`
-
-![1](./img_2.png)
-
-### `GET http://localhost:3000/datasets/:id`
-
-![2](./img.png)
-
-### `POST http://localhost:3000/datasets`
-
-![3](./img_1.png)
-
-### `PUT http://localhost:3000/datasets/:id`
-
-![4](./img_3.png)
-
-### `DELETE http://localhost:3000/datasets/:id`
-
-![5](./img_4.png)
-
-![6](./img_5.png)
-
+Під час виконання роботи було реалізовано повноцінну DAO-інфраструктуру для взаємодії з MySQL базою даних. Створена модель дозволяє ефективно зберігати, зчитувати й обробляти інформацію про відкриті набори даних. DAO-підхід забезпечив зручну архітектуру, що легко масштабується та підтримується.
